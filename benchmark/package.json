@@ -1,0 +1,11 @@
+{
+  "name": "benchmark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "benchmark": "2",
+    "uuid": "^8.3.2"
+  }
+}
