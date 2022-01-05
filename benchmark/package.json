@@ -7,5 +7,9 @@
   "dependencies": {
     "benchmark": "2",
     "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "benchmark": "node benchmark/index.js",
+    "start": "node src/index.js"
   }
 }
