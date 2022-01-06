@@ -1,0 +1,10 @@
+{
+  "name": "cluster",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "autocannon": "^7.5.1"
+  }
+}
