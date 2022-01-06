@@ -1,0 +1,22 @@
+{
+  "name": "memleak-events",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "0x": "^5.0.0",
+    "autocannon": "^7.5.1",
+    "climem": "^1.0.3",
+    "clinic": "^11.0.0"
+  },
+  "scripts": {
+    "start": "set CLIMEM=8999 && node -r climem index.js",
+    "climem": "npx climem 8999",
+    "test": "npx autocannon -c 100 -d 30 -p 10 http://localhost:3000",
+    "flame:0x": "npx 0x -D .0x/{pid}.0x -- node index.js",
+    "clinic:doctor": "npx clinic doctor -- node index.js",
+    "clinic:flame": "npx clinic flame -- node index.js",
+    "clinic:heap": "npx clinic heapprofile -- node index.js"
+  }
+}
